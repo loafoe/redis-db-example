@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/cloudfoundry-community/gautocloud v0.0.0-20180705161326-087edaf8ef16
 	github.com/go-redis/redis/v8 v8.11.5
-	github.com/philips-software/gautocloud-connectors v0.6.1-0.20220921121910-4ffc5579d105
+	github.com/philips-software/gautocloud-connectors v0.7.0
 )
 
 require (
