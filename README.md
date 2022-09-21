@@ -4,7 +4,7 @@ redis-db example app
 ## Istall
 
 ```shell
-go install github.com/loafoe/redis-db-example
+go install github.com/loafoe/redis-db-example@latest
 ```
 
 ## license
