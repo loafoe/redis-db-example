@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/cloudfoundry-community/gautocloud"
 	"github.com/go-redis/redis/v8"
@@ -19,6 +20,8 @@ func main() {
 		fmt.Printf("Cannot find bound hsdp-redis-db instance\n")
 		os.Exit(1)
 	}
+
+	client.Set(context.Background(), "hello", "world", 24*time.Hour)
 
 	res := client.Keys(context.Background(), "*")
 	fmt.Printf("Keys: %+v\n", res)
